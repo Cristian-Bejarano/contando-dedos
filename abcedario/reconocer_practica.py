@@ -32,8 +32,8 @@ HAND_CONNECTIONS = [
 ]
 
 # Cargamos el modelo ya entrenado y su "traductor" de números a letras
-modelo = joblib.load("modelo_abecedario.pkl")
-label_encoder = joblib.load("label_encoder.pkl")
+modelo = joblib.load("moldes/modelo_abecedario.pkl")
+label_encoder = joblib.load("moldes/label_encoder.pkl")
 
 options = HandLandmarkerOptions(
     base_options=BaseOptions(model_asset_path=model_path),
