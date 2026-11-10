@@ -11,7 +11,7 @@ contando dedos/
 ├── datos/                 # Conjuntos de datos estructurados
 ├── moldes/               # Archivos de modelo y codificadores (.pkl)
 ├── capturar.py            # Captura de muestras con la cámara
-├── menu.py                # Interfaz de prueba (Dibujo de nodos)
+├── prueba_mediapipe.py                # Interfaz de prueba (Dibujo de nodos)
 ├── reconocer_libre.py     # Reconocimiento en tiempo real
 ├── reconocer_practica.py  # Modo de práctica
 ├── requerimientos.txt     # Lista de dependencias de Python
