@@ -22,6 +22,7 @@ FRAMES_POR_MUESTRA = 30  # frames que dura
 FPS_CUENTA_REGRESIVA = 30  # asumiendo que corre a ~30 fps
 
 cap = cv2.VideoCapture(0)
+print(cap.get(cv2.CAP_PROP_FRAME_WIDTH), cap.get(cv2.CAP_PROP_FRAME_HEIGHT), cap.get(cv2.CAP_PROP_FPS)) #Muestra informacion relevante
 
 grabando = False
 frames_actuales = []  # Lista para guardar landmarks
@@ -99,9 +100,9 @@ with HandLandmarker.create_from_options(options) as landmarker:
                 carpeta_letra = os.path.join("datos", LETRA)
                 os.makedirs(carpeta_letra, exist_ok=True)
 
-                # Cuenta cuantas muestras hay
-                num_muestras_existentes = len(os.listdir(carpeta_letra))
-                nombre_archivo = os.path.join(carpeta_letra, f"{num_muestras_existentes}.npy")
+                # Cuenta muestras hay y asignacion de valor por muestra
+                siguiente = max([int(a.split(".")[0]) for a in os.listdir(carpeta_letra)], default=-1) + 1
+                nombre_archivo = os.path.join(carpeta_letra, f"{siguiente}.npy")
 
                 # Se convierten las listas en un arreglo
                 np.save(nombre_archivo, np.array(frames_actuales))

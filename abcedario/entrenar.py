@@ -67,8 +67,11 @@ precision = accuracy_score(y_test, y_pred) #Compara lo que se predijo vs lo que 
 
 print(f"Precisión del modelo: {precision * 100:.2f}%")
 
+CARPETA_MODELOS = "moldes"
+os.makedirs(CARPETA_MODELOS, exist_ok=True)
+
 import joblib
-joblib.dump(modelo, "modelo_abecedario.pkl") #Guarda el modelo entrenado
-joblib.dump(label_encoder, "label_encoder.pkl") #Guarda la traduccion del modelo 
+joblib.dump(modelo, os.path.join(CARPETA_MODELOS, "modelo_abecedario.pkl")) #Guarda el modelo entrenado
+joblib.dump(label_encoder, os.path.join(CARPETA_MODELOS, "label_encoder.pkl")) #Guarda la traduccion del modelo 
 
 print("Modelo guardado correctamente")

@@ -1,0 +1,44 @@
+=== normalizado ===
+Exactitud (validación cruzada): 84.47%
+Acierto medio en estáticas: 84.4% | dinámicas: 87.5%
+
+              precision    recall  f1-score   support
+
+           A       0.95      0.95      0.95        21
+           B       1.00      1.00      1.00        21
+           C       0.78      0.91      0.84        23
+           D       0.80      0.76      0.78        21
+           E       0.94      0.76      0.84        21
+           F       1.00      1.00      1.00        21
+           G       0.70      0.76      0.73        21
+           H       1.00      0.95      0.98        21
+           I       0.86      0.90      0.88        21
+           J       1.00      1.00      1.00        21
+           K       0.80      0.91      0.85        22
+           L       0.95      0.90      0.93        21
+           M       0.56      0.43      0.49        21
+           N       0.42      0.48      0.45        27
+           O       0.90      0.90      0.90        21
+           P       0.64      0.64      0.64        22
+           Q       0.83      0.91      0.87        22
+           R       0.79      0.90      0.84        21
+           S       0.88      1.00      0.93        21
+           T       1.00      0.95      0.98        21
+           U       1.00      1.00      1.00        21
+           V       0.86      0.82      0.84        22
+           W       1.00      1.00      1.00        21
+           X       0.89      0.73      0.80        22
+           Y       0.89      0.85      0.87        20
+           Z       1.00      0.86      0.92        21
+           Ñ       0.68      0.68      0.68        28
+
+    accuracy                           0.84       586
+   macro avg       0.86      0.85      0.85       586
+weighted avg       0.85      0.84      0.84       586
+
+Pares más confundidos:
+Ñ se confundió con N: 7 veces
+M se confundió con N: 7 veces
+N se confundió con P: 6 veces
+X se confundió con G: 5 veces
+N se confundió con Ñ: 5 veces
