@@ -7,15 +7,20 @@ Proyecto de vision por computador para el reconocimiento y traduccion de gestos 
 # Estructura del proyecto 
 ```text
 contando dedos/
-├── abecedario/            # Imágenes de entrenamiento/captura
-├── datos/                 # Conjuntos de datos estructurados
-├── moldes/               # Archivos de modelo y codificadores (.pkl)
-├── capturar.py            # Captura de muestras con la cámara
-├── prueba_mediapipe.py                # Interfaz de prueba (Dibujo de nodos)
-├── reconocer_libre.py     # Reconocimiento en tiempo real
-├── reconocer_practica.py  # Modo de práctica
-├── requerimientos.txt     # Lista de dependencias de Python
-└── .gitignore             # Archivos excluidos del control de versiones
+├── abcedario/
+│   ├── capturar.py
+│   ├── entrenar.py
+│   ├── evaluar.py
+│   ├── inferencia.py
+│   ├── reconocer_libre.py
+│   ├── reconocer_practica.py
+│   ├── datos/          # muestras .npy por letra
+│   ├── moldes/         # modelo_abecedario.pkl y label_encoder.pkl
+│   └── evaluaciones/   # matrices, campanas y reportes
+├── modelos/            # hand_landmarker.task
+├── prueba_mediapipe.py
+├── requerimientos.txt
+└── README.md
 ```
 
 # Requisitos del sistema

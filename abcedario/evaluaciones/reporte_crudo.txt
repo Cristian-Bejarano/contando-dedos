@@ -1,44 +1,44 @@
 === crudo ===
-Exactitud (validación cruzada): 66.38%
-Acierto medio en estáticas: 62.5% | dinámicas: 81.2%
+Exactitud (validación cruzada): 68.55%
+Acierto medio en estáticas: 64.7% | dinámicas: 83.5%
 
               precision    recall  f1-score   support
 
-           A       0.76      0.90      0.83        21
-           B       0.90      0.86      0.88        21
-           C       0.45      0.57      0.50        23
-           D       0.47      0.43      0.45        21
-           E       0.71      0.48      0.57        21
-           F       0.57      0.57      0.57        21
-           G       0.79      0.71      0.75        21
-           H       0.79      0.90      0.84        21
-           I       0.67      0.67      0.67        21
-           J       0.95      1.00      0.98        21
-           K       0.64      0.64      0.64        22
-           L       0.47      0.43      0.45        21
-           M       0.41      0.43      0.42        21
-           N       0.41      0.44      0.43        27
-           O       0.47      0.33      0.39        21
-           P       0.59      0.45      0.51        22
-           Q       0.77      0.77      0.77        22
-           R       0.70      0.90      0.79        21
-           S       0.79      0.71      0.75        21
-           T       0.67      0.76      0.71        21
+           A       0.69      0.95      0.80        21
+           B       0.82      0.86      0.84        21
+           C       0.58      0.61      0.60        23
+           D       0.58      0.52      0.55        21
+           E       0.83      0.48      0.61        21
+           F       0.62      0.62      0.62        21
+           G       0.76      0.76      0.76        21
+           H       0.74      0.95      0.83        21
+           I       0.72      0.62      0.67        21
+           J       0.91      0.95      0.93        21
+           K       0.58      0.64      0.61        22
+           L       0.50      0.52      0.51        21
+           M       0.53      0.43      0.47        21
+           N       0.42      0.52      0.47        27
+           O       0.59      0.48      0.53        21
+           P       0.64      0.41      0.50        22
+           Q       0.71      0.77      0.74        22
+           R       0.73      0.90      0.81        21
+           S       0.84      0.76      0.80        21
+           T       0.76      0.76      0.76        21
            U       0.70      0.76      0.73        21
-           V       0.67      0.73      0.70        22
-           W       0.79      0.71      0.75        21
-           X       0.55      0.55      0.55        22
-           Y       0.88      0.75      0.81        20
-           Z       0.86      0.86      0.86        21
-           Ñ       0.63      0.68      0.66        28
+           V       0.64      0.73      0.68        22
+           W       0.78      0.67      0.72        21
+           X       0.65      0.59      0.62        22
+           Y       0.83      0.75      0.79        20
+           Z       0.91      0.95      0.93        21
+           Ñ       0.63      0.63      0.63        27
 
-    accuracy                           0.66       586
-   macro avg       0.67      0.67      0.66       586
-weighted avg       0.66      0.66      0.66       586
+    accuracy                           0.69       585
+   macro avg       0.69      0.69      0.68       585
+weighted avg       0.69      0.69      0.68       585
 
 Pares más confundidos:
-M se confundió con N: 8 veces
+M se confundió con N: 7 veces
+P se confundió con N: 6 veces
 V se confundió con R: 5 veces
 O se confundió con C: 5 veces
-N se confundió con P: 5 veces
-N se confundió con M: 5 veces
+X se confundió con K: 4 veces
